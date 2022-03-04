@@ -1,5 +1,10 @@
 const router = require('express').Router();
-const { addComment, removeComment } = require('../../controllers/comment-controller');
+const { 
+    addComment,
+    removeComment,
+    addreply,
+    removeReply
+} = require('../../controllers/comment-controller');
 
 // /api/comments/<pizzaId>
 router.route('/:pizzaId').post(addComment);
